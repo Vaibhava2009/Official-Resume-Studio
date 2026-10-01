@@ -15,10 +15,4 @@ A modern, fast, and 100% free **ATS-Optimized Resume Builder** web application d
 * **Tailwind CSS** (via CDN)
 * **Vanilla JavaScript** (Secure & Optimized DOM handling)
 
-📂 How to Run Locally
-1. Download or clone this repository.
-2. Save the main file as `index.html`.
-3. Open `index.html` in any modern web browser (Chrome, Edge, Firefox, etc.) and start building your elite resume!
-
----
 © 2027 **Vaibhav Kumar** • All Rights Reserved.
