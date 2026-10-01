@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS-Official Resume - Owner Vaibhav Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #030712;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        .glass-panel { 
+            background: rgba(15, 23, 42, 0.75); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .gradient-glow {
+            text-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+        }
+        
+        /* Exact A4 Page Fit & Print Optimization */
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+            body * { visibility: hidden; }
+            #resume-preview, #resume-preview * { visibility: visible; }
+            #resume-preview { 
+                position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important;
+                box-shadow: none !important; margin: 0 !important; padding: 15mm !important; 
+                background: white !important; border: none !important; font-size: 11pt !important; color: black !important;
+            }
+            .print-hidden { display: none !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen p-4 sm:p-8 antialiased">
+
+    <div class="max-w-4xl mx-auto space-y-10">
+        
+        <!-- Header Title -->
+        <div class="text-center space-y-3 print-hidden pt-4">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-bold tracking-widest uppercase mb-1">
+                🚀 Elite Portfolio Suite
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight gradient-glow">
+                ATS-Official Resume Studio
+            </h1>
+            <p class="text-sm text-slate-400">Owner: <span class="text-sky-400 font-bold">Vaibhav Kumar</span> • Full Page A4 Perfect Fit</p>
+        </div>
+
+        <!-- 1. Input Form Section -->
+        <div id="form-section" class="glass-panel rounded-3xl p-6 sm:p-10 space-y-6 print-hidden">
+            <h3 class="text-lg font-bold flex items-center gap-2 text-sky-400 border-b border-slate-800 pb-3">
+                <span>📝</span> Enter Your Details Securely
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Full Name *</label>
+                    <input type="text" id="in-name" maxlength="60" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Job Role / Target Position</label>
+                    <input type="text" id="in-title" maxlength="60" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Passport Photo (Max 2MB)</label>
+                    <input type="file" id="in-photo" accept="image/png, image/jpeg, image/webp" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-400 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-sky-500/10 file:text-sky-400 hover:file:bg-sky-500/20 cursor-pointer">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Phone Number</label>
+                    <input type="text" id="in-phone" maxlength="25" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Professional Email</label>
+                    <input type="email" id="in-email" maxlength="60" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">GitHub Profile Link</label>
+                    <input type="text" id="in-github" maxlength="80" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Professional Summary (3-4 Sentences)</label>
+                    <textarea id="in-summary" rows="3" maxlength="400" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Work Experience & Impact Bullets</label>
+                    <textarea id="in-exp" rows="3" maxlength="500" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner"></textarea>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Education (Degree, University, Year)</label>
+                    <textarea id="in-edu" rows="2" maxlength="300" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Skills (Hard & Soft Skills)</label>
+                    <textarea id="in-skills" rows="2" maxlength="300" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Certificates & Key Achievements</label>
+                    <textarea id="in-cert" rows="2" maxlength="300" placeholder="" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-sky-500 transition shadow-inner"></textarea>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800">
+                <button onclick="buildResume()" class="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-extrabold py-4 rounded-xl text-sm transition shadow-lg shadow-sky-500/25 tracking-wide">
+                    ✨ Generate Full-Page A4 Resume
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. Dedicated Preview Page Section -->
+        <div id="preview-section" class="hidden space-y-6">
+            
+            <div class="flex items-center justify-between bg-slate-900 border border-slate-800 p-4 rounded-2xl print-hidden">
+                <button onclick="goBackToForm()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold px-5 py-2.5 rounded-xl text-xs transition flex items-center gap-2">
+                    ← Back to Edit
+                </button>
+                <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition shadow-lg shadow-emerald-600/25">
+                    🖨️ Print / Save as PDF
+                </button>
+            </div>
+
+            <!-- The A4 Resume Page -->
+            <div id="resume-preview" class="bg-white text-slate-900 rounded-2xl shadow-2xl overflow-hidden max-w-3xl mx-auto p-10 space-y-5 border border-slate-200 font-['Arial',sans-serif] text-[11pt] leading-relaxed min-h-[1050px] flex flex-col justify-between">
+                
+                <div class="space-y-5">
+                    <!-- Header Section -->
+                    <div class="flex items-start justify-between border-b-2 border-slate-900 pb-4">
+                        <div class="space-y-1.5">
+                            <h2 id="out-name" class="text-3xl font-extrabold tracking-wide uppercase text-slate-900"></h2>
+                            <p id="out-title" class="text-sm font-bold uppercase tracking-widest text-slate-600"></p>
+                            <div class="flex flex-wrap gap-4 text-xs text-slate-700 pt-1">
+                                <span id="out-phone"></span>
+                                <span id="out-email"></span>
+                                <span id="out-github"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="out-photo" src="" alt="Photo" class="w-24 h-28 object-cover border border-slate-400 hidden shadow-sm">
+                        </div>
+                    </div>
+
+                    <!-- Professional Summary -->
+                    <div class="space-y-1.5">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">Professional Summary</h3>
+                        <p id="out-summary" class="text-slate-800 text-[11pt] leading-normal"></p>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="space-y-1.5">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">Work Experience</h3>
+                        <div id="out-exp" class="text-slate-800 text-[11pt] whitespace-pre-line space-y-1 leading-normal"></div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="space-y-1.5">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">Education</h3>
+                        <p id="out-edu" class="text-slate-800 text-[11pt] leading-normal"></p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="space-y-1.5">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">Skills (Hard & Soft Skills)</h3>
+                        <p id="out-skills" class="text-slate-800 text-[11pt] font-medium leading-normal"></p>
+                    </div>
+
+                    <!-- Certificates & Achievements -->
+                    <div class="space-y-1.5">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">Certificates & Key Achievements</h3>
+                        <div id="out-cert" class="text-slate-800 text-[11pt] whitespace-pre-line leading-normal"></div>
+                    </div>
+                </div>
+
+                <!-- Footer Note inside Resume -->
+                <div class="text-center text-[9pt] text-slate-400 border-t border-slate-200 pt-3">
+                    Verified ATS-Optimized Professional Resume • Owner: Vaibhav Kumar
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script Logic -->
+    <script>
+        function buildResume() {
+            let name = document.getElementById('in-name').value.trim();
+            let title = document.getElementById('in-title').value.trim();
+            let phone = document.getElementById('in-phone').value.trim();
+            let email = document.getElementById('in-email').value.trim();
+            let github = document.getElementById('in-github').value.trim();
+            let summary = document.getElementById('in-summary').value.trim();
+            let exp = document.getElementById('in-exp').value.trim();
+            let edu = document.getElementById('in-edu').value.trim();
+            let skills = document.getElementById('in-skills').value.trim();
+            let cert = document.getElementById('in-cert').value.trim();
+
+            if(!name) {
+                alert("⚠️ Kripya apna Full Name zaroor bhariye!");
+                document.getElementById('in-name').focus();
+                return;
+            }
+
+            document.getElementById('out-name').innerText = name;
+            document.getElementById('out-title').innerText = title;
+            document.getElementById('out-phone').innerText = phone ? `📱 ${phone}` : '';
+            document.getElementById('out-email').innerText = email ? `📧 ${email}` : '';
+            document.getElementById('out-github').innerText = github ? `🐙 ${github}` : '';
+            document.getElementById('out-summary').innerText = summary;
+            document.getElementById('out-exp').innerText = exp;
+            document.getElementById('out-edu').innerText = edu;
+            document.getElementById('out-skills').innerText = skills;
+            document.getElementById('out-cert').innerText = cert;
+
+            // Handle Photo upload preview with size check
+            let photoInput = document.getElementById('in-photo');
+            let outPhoto = document.getElementById('out-photo');
+
+            if(photoInput.files && photoInput.files[0]) {
+                let file = photoInput.files[0];
+                if(file.size > 2 * 1024 * 1024) {
+                    alert("⚠️ Photo file size 2MB se kam honi chahiye!");
+                    return;
+                }
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    outPhoto.src = e.target.result;
+                    outPhoto.classList.remove('hidden');
+                }
+                reader.readAsDataURL(file);
+            } else {
+                outPhoto.classList.add('hidden');
+            }
+
+            document.getElementById('form-section').classList.add('hidden');
+            document.getElementById('preview-section').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goBackToForm() {
+            document.getElementById('preview-section').classList.add('hidden');
+            document.getElementById('form-section').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
